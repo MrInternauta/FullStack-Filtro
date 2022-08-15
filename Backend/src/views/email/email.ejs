@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Send Email</title>
+</head>
+
+<body>
+  <div style="width: 100%; background: #fafafa;">
+    <div style="
+          display: none;
+          font-size: 1px;
+          line-height: 1px;
+          max-height: 0px;
+          max-width: 0px;
+          overflow: hidden;
+          mso-hide: all;
+          font-family: sans-serif;
+        "></div>
+    <div style="max-width: 600px; margin: auto;">
+      <!-- header -->
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+        <tbody>
+          <tr>
+            <td style="padding: 20px 0; text-align: center;"></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 600px;">
+        <tbody>
+          <tr>
+            <td bgcolor="#60bd45" align="center" style="
+                  font-family: sans-serif;
+                  color: #ffffff;
+                  font-size: 15px;
+                  mso-height-rule: exactly;
+                  line-height: 20px;
+                ">
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+              <br />
+
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" align="center" height="100%" valign="top" width="100%" style="padding-bottom: 40px;">
+              <div class="card-body">
+                <div class="table-responsive">
+                  <div style=" margin: 0 auto; margin-top: 25px;">
+                    <% if (nombre) { %>
+                      <p style="
+                                          font-family: Arial, Helvetica, sans-serif;   
+                                          "><strong>Nombre:</strong></p>
+                      <p style="
+                                          font-family:Arial,Helvetica,sans-serif;
+                                          ">
+                        <%= nombre %>
+                      </p>
+                      <% } %>
+
+                      <% if (email) { %>
+                        <p style="
+                                          font-family: Arial, Helvetica, sans-serif;   
+                                          "><strong>Correo de contacto:</strong></p>
+                        <p style="
+                                          font-family:Arial,Helvetica,sans-serif;
+                                          ">
+                          <%= email %>
+                        </p>
+                        <% } %>
+
+                        <% if (mensaje) { %>
+                          <p style="
+                                            font-family: Arial, Helvetica, sans-serif;   
+                                            "><strong>Mensaje:</strong></p>
+                          <p style="
+                                            font-family:Arial,Helvetica,sans-serif;
+                                            ">
+                            <%= mensaje %>
+                          </p>
+                          <% } %>
+                                        
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFFFFF" style="
+                  font-family: sans-serif;
+                  color: #000000;
+                  font-size: 15px;
+                  mso-height-rule: exactly;
+                  line-height: 20px;
+                "></td>
+          </tr>
+          <tr>
+            <td height="40" style="font-size: 0; line-height: 0;"></td>
+          </tr>
+          <tr>
+            <td bgcolor="#60bd45" align="center" style="
+                  font-family: sans-serif;
+                  color: #ffffff;
+                  font-size: 15px;
+                  mso-height-rule: exactly;
+                  line-height: 20px;
+                "></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- footer -->
+      <table cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="max-width: 680px;">
+        <tbody>
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
